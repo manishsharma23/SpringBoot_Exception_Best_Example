@@ -13,12 +13,10 @@ public class CustomerService {
  
   @PostConstruct
   void init() {
-    Customer jack = new Customer("Jack", 20);
-    Customer peter = new Customer("Peter", 30);
-    custStorage.put("Jack", jack);
-    custStorage.put("Peter", peter);
-    custStorage.put("20", new Customer("Jack", 20));
-    custStorage.put("30", peter);
+    Customer Manish = new Customer("Manish","Sharma", 20);
+    Customer sharma = new Customer("Lisha","Sharma", 30);
+    custStorage.put("Manish", Manish);
+    custStorage.put("Lisha", sharma);
   }
  
   public Customer findCustomerByName(String name) {
